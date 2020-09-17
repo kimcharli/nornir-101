@@ -1,0 +1,391 @@
+2020-09-17 14:11:23,866 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'gettters': ['get_facts']} on 2 hosts
+2020-09-17 14:11:23,868 - nornir.core.task -    ERROR -      start() - Host 'spine2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+TypeError: napalm_get() missing 1 required positional argument: 'getters'
+
+2020-09-17 14:11:23,868 - nornir.core.task -    ERROR -      start() - Host 'spine1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+TypeError: napalm_get() missing 1 required positional argument: 'getters'
+
+2020-09-17 14:11:43,221 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'gettters': ['get_facts']} on 2 hosts
+2020-09-17 14:11:43,222 - nornir.core.task -    ERROR -      start() - Host 'spine2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+TypeError: napalm_get() missing 1 required positional argument: 'getters'
+
+2020-09-17 14:11:43,222 - nornir.core.task -    ERROR -      start() - Host 'spine1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+TypeError: napalm_get() missing 1 required positional argument: 'getters'
+
+2020-09-17 14:12:02,755 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:12:02,759 - nornir.core.task -    ERROR -      start() - Host 'spine1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/napalm/base/__init__.py", line 68, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2020-09-17 14:12:02,759 - nornir.core.task -    ERROR -      start() - Host 'spine2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/napalm/base/__init__.py", line 68, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2020-09-17 14:14:39,033 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:14:39,035 - nornir.core.task -    ERROR -      start() - Host 'spine1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/napalm/base/__init__.py", line 68, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2020-09-17 14:14:39,036 - nornir.core.task -    ERROR -      start() - Host 'spine2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/napalm/base/__init__.py", line 68, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2020-09-17 14:16:00,166 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:16:43,024 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:16:44,553 - nornir.core.task -    ERROR -      start() - Host 'spine1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/jnpr/junos/device.py", line 1326, in open
+    self._conn = netconf_ssh.connect(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/ncclient/manager.py", line 168, in connect
+    return connect_ssh(*args, **kwds)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/ncclient/manager.py", line 135, in connect_ssh
+    session.connect(*args, **kwds)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/ncclient/transport/ssh.py", line 362, in connect
+    self._auth(username, password, key_filenames, allow_agent, look_for_keys)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/ncclient/transport/ssh.py", line 464, in _auth
+    raise AuthenticationError(repr(saved_exception))
+ncclient.transport.errors.AuthenticationError: AuthenticationException('Authentication failed.')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/napalm/junos/junos.py", line 127, in open
+    self.device.open(auto_probe=self.auto_probe)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/jnpr/junos/device.py", line 1345, in open
+    raise EzErrors.ConnectAuthError(self)
+jnpr.junos.exception.ConnectAuthError: ConnectAuthError(10.85.192.19)
+
+2020-09-17 14:16:44,553 - nornir.core.task -    ERROR -      start() - Host 'spine2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/jnpr/junos/device.py", line 1326, in open
+    self._conn = netconf_ssh.connect(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/ncclient/manager.py", line 168, in connect
+    return connect_ssh(*args, **kwds)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/ncclient/manager.py", line 135, in connect_ssh
+    session.connect(*args, **kwds)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/ncclient/transport/ssh.py", line 362, in connect
+    self._auth(username, password, key_filenames, allow_agent, look_for_keys)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/ncclient/transport/ssh.py", line 464, in _auth
+    raise AuthenticationError(repr(saved_exception))
+ncclient.transport.errors.AuthenticationError: AuthenticationException('Authentication failed.')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/napalm/junos/junos.py", line 127, in open
+    self.device.open(auto_probe=self.auto_probe)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/jnpr/junos/device.py", line 1345, in open
+    raise EzErrors.ConnectAuthError(self)
+jnpr.junos.exception.ConnectAuthError: ConnectAuthError(10.85.192.20)
+
+2020-09-17 14:19:01,528 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:19:03,088 - nornir.core.task -    ERROR -      start() - Host 'spine1': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/jnpr/junos/device.py", line 1326, in open
+    self._conn = netconf_ssh.connect(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/ncclient/manager.py", line 168, in connect
+    return connect_ssh(*args, **kwds)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/ncclient/manager.py", line 135, in connect_ssh
+    session.connect(*args, **kwds)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/ncclient/transport/ssh.py", line 362, in connect
+    self._auth(username, password, key_filenames, allow_agent, look_for_keys)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/ncclient/transport/ssh.py", line 464, in _auth
+    raise AuthenticationError(repr(saved_exception))
+ncclient.transport.errors.AuthenticationError: AuthenticationException('Authentication failed.')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/napalm/junos/junos.py", line 127, in open
+    self.device.open(auto_probe=self.auto_probe)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/jnpr/junos/device.py", line 1345, in open
+    raise EzErrors.ConnectAuthError(self)
+jnpr.junos.exception.ConnectAuthError: ConnectAuthError(10.85.192.19)
+
+2020-09-17 14:19:03,088 - nornir.core.task -    ERROR -      start() - Host 'spine2': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/jnpr/junos/device.py", line 1326, in open
+    self._conn = netconf_ssh.connect(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/ncclient/manager.py", line 168, in connect
+    return connect_ssh(*args, **kwds)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/ncclient/manager.py", line 135, in connect_ssh
+    session.connect(*args, **kwds)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/ncclient/transport/ssh.py", line 362, in connect
+    self._auth(username, password, key_filenames, allow_agent, look_for_keys)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/ncclient/transport/ssh.py", line 464, in _auth
+    raise AuthenticationError(repr(saved_exception))
+ncclient.transport.errors.AuthenticationError: AuthenticationException('Authentication failed.')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/napalm/junos/junos.py", line 127, in open
+    self.device.open(auto_probe=self.auto_probe)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/jnpr/junos/device.py", line 1345, in open
+    raise EzErrors.ConnectAuthError(self)
+jnpr.junos.exception.ConnectAuthError: ConnectAuthError(10.85.192.20)
+
+2020-09-17 14:20:38,469 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:22:15,273 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show versions'} on 2 hosts
+2020-09-17 14:22:16,307 - nornir.core.task -    ERROR -      start() - Host 'spine2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 302, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/netmiko/base_connection.py", line 344, in __init__
+    self._open()
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/netmiko/base_connection.py", line 349, in _open
+    self.establish_connection()
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/netmiko/base_connection.py", line 918, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/client.py", line 435, in connect
+    self._auth(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/client.py", line 764, in _auth
+    raise saved_exception
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/client.py", line 751, in _auth
+    self._transport.auth_password(username, password)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/transport.py", line 1509, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2020-09-17 14:22:16,307 - nornir.core.task -    ERROR -      start() - Host 'spine1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 302, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/netmiko/base_connection.py", line 344, in __init__
+    self._open()
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/netmiko/base_connection.py", line 349, in _open
+    self.establish_connection()
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/netmiko/base_connection.py", line 918, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/client.py", line 435, in connect
+    self._auth(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/client.py", line 764, in _auth
+    raise saved_exception
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/client.py", line 751, in _auth
+    self._transport.auth_password(username, password)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/transport.py", line 1509, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2020-09-17 14:22:37,747 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:22:42,661 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show versions'} on 2 hosts
+2020-09-17 14:22:43,716 - nornir.core.task -    ERROR -      start() - Host 'spine2': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 302, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/netmiko/base_connection.py", line 344, in __init__
+    self._open()
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/netmiko/base_connection.py", line 349, in _open
+    self.establish_connection()
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/netmiko/base_connection.py", line 918, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/client.py", line 435, in connect
+    self._auth(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/client.py", line 764, in _auth
+    raise saved_exception
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/client.py", line 751, in _auth
+    self._transport.auth_password(username, password)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/transport.py", line 1509, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2020-09-17 14:22:43,716 - nornir.core.task -    ERROR -      start() - Host 'spine1': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/task.py", line 98, in start
+    r = self.task(self, **self.params)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 440, in get_connection
+    self.open_connection(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir/core/inventory.py", line 492, in open_connection
+    conn_obj.open(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/netmiko/ssh_dispatcher.py", line 302, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/netmiko/base_connection.py", line 344, in __init__
+    self._open()
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/netmiko/base_connection.py", line 349, in _open
+    self.establish_connection()
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/netmiko/base_connection.py", line 918, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/client.py", line 435, in connect
+    self._auth(
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/client.py", line 764, in _auth
+    raise saved_exception
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/client.py", line 751, in _auth
+    self._transport.auth_password(username, password)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/transport.py", line 1509, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/Users/ckim/venv/nornir/lib/python3.8/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+2020-09-17 14:28:41,817 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:31:23,922 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:32:34,041 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:41:35,057 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:43:26,411 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:43:31,441 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show bgp summary']} on 2 hosts
+2020-09-17 14:45:11,708 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:45:17,037 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show bgp summary']} on 2 hosts
+2020-09-17 14:46:14,615 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:46:19,618 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show bgp summary']} on 2 hosts
+2020-09-17 14:46:50,940 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:46:55,802 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show bgp summary']} on 2 hosts
+2020-09-17 14:48:31,770 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:48:37,669 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show bgp summary']} on 2 hosts
+2020-09-17 14:51:54,696 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:52:00,486 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show bgp summary']} on 2 hosts
+2020-09-17 14:52:12,427 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:52:17,814 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show bgp summary']} on 2 hosts
+2020-09-17 14:54:27,819 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:54:32,804 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show bgp summary']} on 2 hosts
+2020-09-17 14:55:08,684 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:55:13,707 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show bgp summary']} on 2 hosts
+2020-09-17 14:58:20,094 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:58:24,909 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show bgp summary']} on 2 hosts
+2020-09-17 14:59:05,995 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 14:59:10,703 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show bgp summary']} on 2 hosts
+2020-09-17 15:01:20,945 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 15:01:25,816 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show bgp summary']} on 2 hosts
+2020-09-17 15:02:48,248 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 15:02:53,255 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show bgp summary']} on 2 hosts
+2020-09-17 15:04:26,147 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_facts']} on 2 hosts
+2020-09-17 15:04:31,421 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show bgp summary']} on 2 hosts

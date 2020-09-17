@@ -1,0 +1,13 @@
+---
+spine1:
+  groups:
+    - spines
+  hostname: 10.85.192.19
+
+spine2:
+  groups:
+    - spines
+  hostname: 10.85.192.20
+
+  
+

@@ -1,0 +1,12 @@
+---
+spines:
+  # nornir_username: root
+  # nornir_password: contrail123
+  # nornir_nos: junos
+  platform: junos
+  username: contrail
+  password: contrail123
+  data:
+    domain: pslab.net
+    asn: 64512
+
